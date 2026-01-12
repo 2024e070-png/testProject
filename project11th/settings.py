@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "testApp",
-    'debug_toolbar',
+    #'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -135,4 +135,10 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # settings.py
 INTERNAL_IPS = [
     '127.0.0.1',
+]
+
+ALLOWED_HOSTS = [
+    'testproject-ev0q.onrender.com',
+    'localhost',
+    '127.0.0.1'
 ]
