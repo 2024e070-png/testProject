@@ -138,7 +138,14 @@ INTERNAL_IPS = [
 ]
 
 ALLOWED_HOSTS = [
+<<<<<<< HEAD
     'testproject-ev0q.onrender.com',
     'localhost',
     '127.0.0.1'
 ]
+=======
+            'testproject-ev0q.onrender.com',
+            'localhost',
+            '127.0.0.1'
+]
+>>>>>>> 5fd6716ef4b5ce63e67620e3a792172ff604cb90
