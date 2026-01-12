@@ -1,0 +1,15 @@
+<h1>投稿フォーム</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">投稿する</button>
+</form>
+
+<hr>
+
+<h2>投稿一覧</h2>
+{% for post in posts %}
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 5px;">
+        <p>内容: {{ post.text }}</p>  <small>投稿日: {{ post.created_at }}</small>
+    </div>
+{% endfor %}
